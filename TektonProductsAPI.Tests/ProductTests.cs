@@ -27,7 +27,7 @@ namespace TektonProductsAPI.Tests
             Assert.True(result);
         }
         [Fact]
-        public void GetProducts_ExistingProducts_ShouldReturnProduct()
+        public void GetProduct_ExistingProducts_ShouldReturnProduct()
         {
             //arrange
             var product = prdHlpr.CreteProductModel();
@@ -50,7 +50,7 @@ namespace TektonProductsAPI.Tests
             Assert.IsType<List<Product>>(result);
         }
         [Fact]
-        public void DeleteProduct_ExistingProduct_ShouldReturnProduct()
+        public void DeleteProduct_ExistingProduct_ShouldReturnTrue()
         {
             //arrange
             var product = prdHlpr.CreteProductModel();
@@ -59,6 +59,19 @@ namespace TektonProductsAPI.Tests
             var result = prdHlpr.MockDeleteProduct(product);
 
             //assert
+            Assert.True(result);
+        }
+        [Fact]
+        public void UpdateProduct_ExistingProduct_ShouldReturnProduct()
+        {
+            //arrange
+            var product = prdHlpr.CreteProductModel();
+
+            //act
+            var result = prdHlpr.MockUpdateProduct(product);
+
+            //assert
+            Assert.Contains("Testing", product.Name);
             Assert.True(result);
         }
     }

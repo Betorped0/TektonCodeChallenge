@@ -62,5 +62,15 @@ namespace TektonProductsAPI.Tests.ApiTestBase
 
             return result;
         }
+        public bool MockUpdateProduct(Product product)
+        {
+            var productMock = new Mock<IProductsRepository>();
+
+            product.Name = $"Testing Update{product.Name}";
+            productMock.Setup(p => p.UpdateProduct(product)).Returns(true);
+            var result = productMock.Object.UpdateProduct(product);
+
+            return result;
+        }
     }
 }
