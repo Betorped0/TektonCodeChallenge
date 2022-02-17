@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "be1d2997-5028-4593-8eb6-533f81df82a6": {
+      "ProjectGuid": "be1d2997-5028-4593-8eb6-533f81df82a6",
+      "DisplayName": "TektonProductsMasterDet",
+      "ColorIndex": 0
+    },
+    "aff40146-fd67-476a-8f7b-803419666e3d": {
+      "ProjectGuid": "aff40146-fd67-476a-8f7b-803419666e3d",
+      "DisplayName": "TekTonProductsMasterDetail.Tests",
+      "ColorIndex": 1
+    },
+    "442004c4-1103-4226-9940-43a5a0b5471c": {
+      "ProjectGuid": "442004c4-1103-4226-9940-43a5a0b5471c",
+      "DisplayName": "TektonProductsMasterDet.Infrastructure",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
